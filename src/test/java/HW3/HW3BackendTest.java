@@ -22,7 +22,6 @@ class HW3BackendTest {
         Faker faker = new Faker();
         System.out.println(faker.chuckNorris().fact());
         JsonPath jsonPath = given()
-                //todo на 4-ом занятии заменим с помощью сериализации
                 .body("{\n" +
                         "    \"username\": \"" + faker.funnyName() + "\",\n" +
                         "    \"firstName\": \"" + faker.name().firstName() + "\",\n" +
