@@ -16,7 +16,6 @@
     <aspectj.version>1.9.7</aspectj.version>
     <cucumber.version>7.2.3</cucumber.version>
     <allure.version>2.16.1</allure.version>
-    <jackson.version>2.13.1</jackson.version>
   </properties>
 
   <dependencies>
@@ -89,6 +88,12 @@
       <version>1.0.2</version>
     </dependency>
 
+
+    <dependency>
+      <groupId>io.rest-assured</groupId>
+      <artifactId>rest-assured</artifactId>
+      <version>4.5.1</version>
+    </dependency>
     <dependency>
       <groupId>io.qameta.allure</groupId>
       <artifactId>allure-rest-assured</artifactId>
@@ -100,23 +105,6 @@
       <artifactId>javafaker</artifactId>
       <version>1.0.2</version>
     </dependency>
-
-    <dependency>
-      <groupId>com.fasterxml.jackson.core</groupId>
-      <artifactId>jackson-databind</artifactId>
-      <version>${jackson.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>com.fasterxml.jackson.core</groupId>
-      <artifactId>jackson-core</artifactId>
-      <version>${jackson.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>com.fasterxml.jackson.core</groupId>
-      <artifactId>jackson-annotations</artifactId>
-      <version>${jackson.version}</version>
-    </dependency>
-
 
   </dependencies>
 
@@ -138,7 +126,7 @@
       </plugin>
       <plugin>
         <artifactId>maven-surefire-plugin</artifactId>
-        <version>2.22.0</version>
+        <version>2.22.1</version>
         <configuration>
           <testFailureIgnore>false</testFailureIgnore>
           <argLine>
